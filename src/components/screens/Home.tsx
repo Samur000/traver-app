@@ -85,7 +85,7 @@ interface PlaceCardProps {
 	price: number;
 }
 
-const PlaceCard = ({
+export const PlaceCard = ({
 	id,
 	className,
 	name,
@@ -94,7 +94,7 @@ const PlaceCard = ({
 	price
 }: PlaceCardProps) => (
 	<ButtonBase
-		className={clsx('h-full w-[80vw] rounded bg-white p-2', className)}
+		className={clsx('max-h-32 w-[75vw] rounded bg-white p-2', className)}
 		LinkComponent={Link}
 		href={`${ROUTES.routes}/${id}`}
 	>
